@@ -11,6 +11,7 @@ const PhotoFinder = ({ onSolChange, onCameraChange, onButtonSubmit, maxSol, sol 
             <div className="center">
                 <div className="form center pa4 br3 shadow-5">
                     <select className="f4 pa2 w-40 center" onChange={onCameraChange}>
+                        <option value="">Any Camera</option>
                         <option value="FHAZ">Front Hazard Avoidance Camera</option>
                         <option value="RHAZ">Rear Hazard Avoidance Camera</option>
                         <option value="MAST">Mast Camera</option>

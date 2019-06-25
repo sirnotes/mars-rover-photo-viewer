@@ -5,7 +5,7 @@ import PhotoFinder from './components/PhotoFinder/PhotoFinder';
 import './App.css';
 
 const initialState = {
-  camera: 'FHAZ',
+  camera: null,
   sol: 1,
   maxSol: 2446,
   photos: []
@@ -20,7 +20,11 @@ class App extends Component {
   }
 
   onCameraChange = (event) => {
-    this.setState({})
+    let camera = event.target.value;
+    if (false == camera) {
+      camera = null;
+    }
+    this.setState({camera: camera})
   }
 
   onSolChange = (event) => {
