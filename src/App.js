@@ -5,7 +5,7 @@ import PhotoFinder from './components/PhotoFinder/PhotoFinder';
 import './App.css';
 
 const initialState = {
-  camera: '',
+  camera: 'FHAZ',
   sol: 1,
   maxSol: 2446,
   photos: []
