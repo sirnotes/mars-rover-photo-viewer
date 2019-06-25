@@ -24,11 +24,33 @@ class App extends Component {
   }
 
   onSolChange = (event) => {
-    this.setState({sol: event.target.value})
+    let sol = event.target.value;
+    if (sol > this.state.maxSol) {
+      sol = this.state.maxSol;
+    }
+    if (sol < 1) {
+      sol = 1;
+    }
+    this.setState({'sol': sol});
   }
 
   onButtonSubmit = (event) => {
-
+    fetch(`${apiUrl}/photos`,  {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        camera: this.state.camera,
+        sol: this.state.sol
+      })
+    })
+    .then(response => response.json())
+    .then(response => {
+      // @todo render images in cards.
+      console.log(response);
+    })
+    .catch(console.log)
   }
 
   render() {
