@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './components/Logo/Logo';
 import PhotoFinder from './components/PhotoFinder/PhotoFinder';
+import Photos from './components/Photos/Photos';
 
 import './App.css';
 
@@ -51,8 +52,7 @@ class App extends Component {
     })
     .then(response => response.json())
     .then(response => {
-      // @todo render images in cards.
-      console.log(response);
+      this.setState({photos: response});
     })
     .catch(console.log)
   }
@@ -70,6 +70,7 @@ class App extends Component {
             onSolChange={this.onSolChange}
             onButtonSubmit={this.onButtonSubmit}
             onCameraChange={this.onCameraChange} />
+            <Photos photos={photos} />
         </div>
       </div>
     )
