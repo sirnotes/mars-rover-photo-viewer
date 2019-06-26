@@ -61,7 +61,7 @@ class App extends Component {
     const {maxSol, sol, photos} = this.state
     return (
       <div className="App">
-        <div>
+        <div className="flex flex-column">
           <Logo />
           <PhotoFinder
             apiUrl={apiUrl}
