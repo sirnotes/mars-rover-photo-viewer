@@ -4,7 +4,6 @@ import Photo from '../Photo/Photo';
 import './Photos.css';
 
 const Photos = ({photos}) => {
-    console.log(photos);
     return (
         <div className="photos" style={{ overflowY: 'scroll', height: 500 }}>
             {
