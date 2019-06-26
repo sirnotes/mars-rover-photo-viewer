@@ -22,7 +22,7 @@ class App extends Component {
 
   onCameraChange = (event) => {
     let camera = event.target.value;
-    if (false == camera) {
+    if (false === camera) {
       camera = null;
     }
     this.setState({camera: camera})
