@@ -9,8 +9,8 @@ const PhotoFinder = ({ onSolChange, onCameraChange, onButtonSubmit, maxSol, sol 
                 { 'This will retreive 25 photos at a time from the NASA image library for the Mars Curiosity Rover' }
             </p>
             <div className="center">
-                <div className="form flex-ns justify-center pa4 br3 shadow-5">
-                    <select className="f4 w-100 w-33-ns pa2" onChange={onCameraChange}>
+                <div className="form flex-ns justify-center pa2 br3 shadow-5">
+                    <select className="f4 w-100 w-33-ns pa2 ma2" onChange={onCameraChange}>
                         <option value="">Any Camera</option>
                         <option value="FHAZ">Front Hazard Avoidance Camera</option>
                         <option value="RHAZ">Rear Hazard Avoidance Camera</option>
@@ -20,9 +20,9 @@ const PhotoFinder = ({ onSolChange, onCameraChange, onButtonSubmit, maxSol, sol 
                         <option value="MARDI">Mars Descent Imager</option>
                         <option value="NAVCAM">Navigation Camera</option>
                     </select>
-                    <label>Mars Sol [1-{maxSol}] <input type="number" className="f4 pa2 w-100 w-33-ns" onChange={onSolChange} max={maxSol} value={sol} /></label>
+                    <label>Mars Sol [1-{maxSol}] <input type="number" className="f4 pa2 w-100 w-33-ns ma2" onChange={onSolChange} max={maxSol} value={sol} /></label>
                     <button
-                        className="f4 w-100 w-33-ns grow link ph3 pv2 dib white bg-light-red"
+                        className="f4 w-100 w-33-ns grow link ph3 pv2 dib white bg-light-red ma2"
                         onClick={onButtonSubmit}
                         >Get Photos</button>
                 </div>
