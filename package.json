@@ -2,7 +2,7 @@
   "name": "mars-rover-photos-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sirnotes.github.io/mars-rover-photo-viewer",
+  "homepage": "https://kennithnichol.github.io/mars-rover-photo-viewer",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
