@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mars-rover-photo-viewer/precache-manifest.3a9d68deef12eefcd2e35cf25f8b746b.js"
+  "/mars-rover-photo-viewer/precache-manifest.216b6abf30697f4d333095d1aec52b2a.js"
 );
 
 self.addEventListener('message', (event) => {
